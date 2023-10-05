@@ -19,9 +19,11 @@ function DashBoard() {
     const [pressed,setpressed] = useState(-1)
     return (
         <ScrollView style={{ backgroundColor: '#FAFAFA', paddingHorizontal: wp('8%') }}>
+            {/* Header */}
             <View style={{ height: hp('8%'), alignItems: 'center', justifyContent: 'center' }}>
                 <Text style={{ fontSize: 18, lineHeight: 25, color: '#052027', fontFamily: 'TTNorms-Bold' }}>DashBoard</Text>
             </View>
+            {/* First Horizontal ScrollView */}
             <View style={{}}>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                     {items?.map((item, key) => (
@@ -31,6 +33,7 @@ function DashBoard() {
                     ))}
                 </ScrollView>
             </View>
+            {/* Stats Card */}
             <View style={{ height: hp('54%'), marginTop: 16, borderRadius: 12, backgroundColor: 'white', }}>
                 <View style={{ padding: 12, flexDirection: 'row', justifyContent: 'space-between', height: hp('5%'), alignItems: 'center' }}
                 >
@@ -100,6 +103,7 @@ function DashBoard() {
                     </View>
                 </View>
             </View>
+            {/* Booking Card */}
             <View style={{ height: hp('40%'), marginTop: 16, borderRadius: 12, backgroundColor: 'white', }}>
                 <View style={{ padding: 12, flexDirection: 'row', justifyContent: 'space-between', height: hp('5%'), alignItems: 'center' }}
                 >
@@ -131,6 +135,7 @@ function DashBoard() {
                     </View>
                 </View>
             </View>
+            {/* Discover Card */}
             <View style={{ marginTop: 16, height: hp('28%') }}>
                 <Text style={{ fontSize: 18, lineHeight: 25, color: '#052027', fontFamily: 'TTNorms-Bold', marginLeft: 16 }}>Discover</Text>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
@@ -169,6 +174,7 @@ function DashBoard() {
                     ))}
                 </ScrollView>
             </View>
+            {/* Contact us */}
             <View style={{ flexDirection: 'row', marginVertical: 10, height: hp('6%'), paddingHorizontal: 12, elevation: 5, borderRadius: 8, backgroundColor: 'white', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Text style={{ flex: 2, fontSize: 18, lineHeight: 25, color: '#052027', fontFamily: 'TTNorms-Bold' }}>Contact us</Text>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', flex: 1 }}>
